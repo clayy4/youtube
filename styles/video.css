@@ -1,0 +1,118 @@
+
+.video-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media(min-width:751px) and (max-width:999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(min-width:1000px){
+  .video-grid{
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+}
+
+
+
+.video-title{
+  margin: 0px;
+  font-size: 14 px;
+  font-weight: 500 ;
+  line-height: 20px;
+  margin-bottom: 10px;
+} 
+
+.video-author,.video-stats{
+  font-size:12px;
+  color: rgb(69, 69, 69);
+}
+.video-author{
+  margin-bottom: 4px;
+}
+.thumbnail-row{
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.thumbnail{
+  width: 100%;
+}
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.profile-picture{
+  width: 100%;
+  border-radius: 100%;
+  width: 36px;
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+}
+.video-time {
+ font-family: Roboto;
+ font-size: 12px;
+ font-weight: 500;
+ background-color: black; 
+ color: white;
+ position: absolute;
+ bottom: 8px;
+ right: 5px;
+ padding: 4px 4px ;
+ border-radius: 2px;
+}
+.channel-picture {
+  display: flex;
+  position: relative;
+  height: 36px;
+}
+.channel-picture .tooltip {
+  display: grid;
+  grid-template-columns: 47px 1fr;
+  position:  absolute;
+  background-color: rgb(251, 251, 251);
+  padding: 11px 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(110, 110, 110, 0.264);
+  opacity: 1;
+  pointer-events: none;
+  width: 190px;
+  transition: 0.15s;
+  opacity: 0;
+  right: -174px;
+  bottom: -80px;
+
+}
+.channel-picture .tooltip img{
+  width: 100%;
+  border-radius: 100%;
+}
+.channel-picture .tooltip .channel-name {
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  padding-right: 5px;
+}
+.channel-picture .tooltip .number-subscribers{
+  color: gray;
+  font-size: 13px;
+  margin-left: 5px;
+  margin-top: 3px;
+}
+.channel-picture:hover .tooltip{
+  opacity: 1;
+}
+
+
+
