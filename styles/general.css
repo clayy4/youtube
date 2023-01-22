@@ -6,15 +6,19 @@ p{
 div{
   font-family: Roboto, Arial, sans-serif;
 }
+
 body{
   padding: 80px 24px 1000px 96px;
   background-color: rgb(237, 237, 237);
+  transition: padding 0.05s;
 }
-@media (min-width:1200px){
+
+@media (min-width:1200px) {
   body{
-    padding-left:224px;
+    padding-left:206px;
   }
 }
+
 a{
   text-decoration: none;
   color: black;
