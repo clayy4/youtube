@@ -10,6 +10,11 @@ body{
   padding: 80px 24px 1000px 96px;
   background-color: rgb(237, 237, 237);
 }
+@media (min-width:1200px){
+  body{
+    padding-left:224px;
+  }
+}
 a{
   text-decoration: none;
   color: black;
